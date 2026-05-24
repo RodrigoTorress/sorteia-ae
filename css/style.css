@@ -100,6 +100,14 @@ button:hover {
   font-weight: bold;
 }
 
+#message.success {
+  color: #15803d;
+}
+
+#message.error {
+  color: #b91c1c;
+}
+
 section > div {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
