@@ -7,7 +7,61 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Sorteio Times</h1>
+    <header>
+      <h1>Sorteio Times</h1>
+      <p>Escolha o esporte, informe os jogadores e sorteie dois times.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Dados do sorteio</h2>
+
+        <form>
+          <div>
+            <label for="sport">Esporte</label>
+            <select id="sport" name="sport">
+              <option value="volei">Volei</option>
+              <option value="basquete">Basquete</option>
+              <option value="futebol">Futebol</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="players">Jogadores</label>
+            <textarea
+              id="players"
+              name="players"
+              rows="10"
+              placeholder="Digite um jogador por linha"
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="button" id="drawButton">Sortear times</button>
+            <button type="button" id="sampleButton">Preencher exemplo</button>
+            <button type="button" id="clearButton">Limpar</button>
+          </div>
+        </form>
+
+        <p id="message"></p>
+      </section>
+
+      <section>
+        <h2>Resultado</h2>
+
+        <div>
+          <article>
+            <h3>Time A</h3>
+            <ol id="teamA"></ol>
+          </article>
+
+          <article>
+            <h3>Time B</h3>
+            <ol id="teamB"></ol>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <script src="js/sports.js"></script>
     <script src="js/draw.js"></script>
