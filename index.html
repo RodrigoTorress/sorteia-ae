@@ -21,20 +21,30 @@
             <label for="sport">Esporte</label>
             <select id="sport" name="sport">
               <option value="volei">Volei</option>
+              <option value="esporteDupla">Esporte de Dupla</option>
               <option value="basquete">Basquete</option>
               <option value="futebol">Futebol</option>
             </select>
           </div>
 
           <div>
-            <label for="players">Jogadores</label>
-            <textarea
-              id="players"
-              name="players"
-              rows="10"
-              placeholder="Digite um jogador por linha"
-            ></textarea>
+            <label for="playerName">Jogador</label>
+            <div class="player-input">
+              <input
+                id="playerName"
+                name="playerName"
+                type="text"
+                placeholder="Digite o nome do jogador"
+              />
+              <button type="button" id="addPlayerButton">
+                Adicionar jogador
+              </button>
+            </div>
           </div>
+
+          <p id="playerCounter">Nenhum jogador adicionado.</p>
+
+          <ul id="playerList"></ul>
 
           <div>
             <button type="button" id="drawButton">Sortear times</button>

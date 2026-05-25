@@ -1,14 +1,3 @@
-function getPlayersFromText(text) {
-  return text
-    .split("\n")
-    .map(function (player) {
-      return player.trim();
-    })
-    .filter(function (player) {
-      return player.length > 0;
-    });
-}
-
 function hasEnoughPlayers(players, playersPerTeam) {
   return players.length >= playersPerTeam * 2;
 }

@@ -1,5 +1,5 @@
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -56,7 +56,7 @@ label {
 }
 
 select,
-textarea {
+input {
   width: 100%;
   padding: 12px;
   border: 1px solid #bcccdc;
@@ -64,9 +64,35 @@ textarea {
   font: inherit;
 }
 
-textarea {
-  min-height: 160px;
-  resize: vertical;
+.player-input {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+#playerCounter {
+  margin: 0;
+  color: #52606d;
+  font-weight: bold;
+}
+
+#playerList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#playerList li {
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #e0f2fe;
+  color: #075985;
+  font-weight: bold;
 }
 
 button {
@@ -156,5 +182,9 @@ li {
   button {
     width: 100%;
     margin-right: 0;
+  }
+
+  .player-input {
+    grid-template-columns: 1fr;
   }
 }

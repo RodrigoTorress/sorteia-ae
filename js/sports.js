@@ -3,6 +3,10 @@ const sports = {
     name: "Volei",
     playersPerTeam: 6
   },
+  esporteDupla: {
+    name: "Esporte de Dupla",
+    playersPerTeam: 2
+  },
   basquete: {
     name: "Basquete",
     playersPerTeam: 6
